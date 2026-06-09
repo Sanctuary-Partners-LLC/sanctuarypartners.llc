@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanctuary Partners LLC</title>
+    <meta name="description" content="Sanctuary Partners LLC is a privately held company supporting independent ventures in software and consulting.">
+    <style>
+        :root {
+            --ink: #1a1a1a;
+            --muted: #6b6b6b;
+            --line: #e5e5e5;
+            --accent: #2c5f5d;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { height: 100%; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            color: var(--ink);
+            background: #fafafa;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 80px 32px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        header { border-bottom: 1px solid var(--line); padding-bottom: 32px; margin-bottom: 48px; }
+        .mark {
+            font-size: 14px; font-weight: 600;
+            letter-spacing: 0.12em; text-transform: uppercase;
+            color: var(--accent); margin-bottom: 12px;
+        }
+        h1 { font-size: 32px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.2; }
+        main { flex: 1; }
+        .lede { font-size: 18px; color: var(--ink); margin-bottom: 24px; }
+        p { color: var(--muted); margin-bottom: 16px; }
+        .contact { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--line); }
+        .contact h2 {
+            font-size: 13px; font-weight: 600;
+            letter-spacing: 0.12em; text-transform: uppercase;
+            color: var(--muted); margin-bottom: 12px;
+        }
+        a {
+            color: var(--accent); text-decoration: none;
+            border-bottom: 1px solid transparent; transition: border-color 0.15s;
+        }
+        a:hover { border-bottom-color: var(--accent); }
+        footer {
+            margin-top: 64px; padding-top: 24px;
+            border-top: 1px solid var(--line);
+            font-size: 13px; color: var(--muted);
+        }
+        @media (max-width: 480px) {
+            .container { padding: 48px 24px; }
+            h1 { font-size: 26px; }
+            .lede { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <header>
+                <div class="mark">Sanctuary Partners</div>
+                <h1>Sanctuary Partners LLC</h1>
+            </header>
+            <main>
+                <p class="lede">
+                    Sanctuary Partners LLC is a privately held holding company
+                    based in the United States.
+                </p>
+                <p>
+                    The company serves as the legal home for a small portfolio of
+                    independent ventures across software, consulting, and
+                    related services. Each venture operates under its own brand
+                    and is accessible through its own website.
+                </p>
+                <p>
+                    For matters relating to the entity itself, please use the
+                    contact information below.
+                </p>
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <p>
+                        <a href="mailto:tj@sanctuarypartners.llc">tj@sanctuarypartners.llc</a>
+                    </p>
+                </div>
+            </main>
+        </div>
+        <footer>
+            &copy; <span id="year"></span> Sanctuary Partners LLC. All rights reserved.
+        </footer>
+    </div>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
