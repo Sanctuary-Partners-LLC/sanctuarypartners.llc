@@ -41,22 +41,44 @@
         .lede { font-size: 18px; color: var(--ink); margin-bottom: 24px; }
         p { color: var(--muted); margin-bottom: 16px; }
         .ventures { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--line); }
-        .ventures h2 {
+        .ventures > h2 {
             font-size: 13px; font-weight: 600;
             letter-spacing: 0.12em; text-transform: uppercase;
-            color: var(--muted); margin-bottom: 20px;
+            color: var(--muted); margin-bottom: 24px;
+        }
+        .venture-category { margin-bottom: 32px; }
+        .venture-category:last-child { margin-bottom: 0; }
+        .venture-category-label {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 0.14em; text-transform: uppercase;
+            color: var(--accent); margin-bottom: 12px;
         }
         .venture-item {
             display: flex; flex-direction: column; gap: 4px;
-            padding: 16px 0; border-bottom: 1px solid var(--line);
+            padding: 14px 0; border-bottom: 1px solid var(--line);
         }
         .venture-item:last-child { border-bottom: none; }
         .venture-name {
             font-size: 16px; font-weight: 600; color: var(--ink);
         }
-        .venture-name a { color: var(--ink); border-bottom: none; }
-        .venture-name a:hover { color: var(--accent); }
+        .venture-name a { color: #2563eb; border-bottom: none; }
+        .venture-name a:hover { color: #1d4ed8; text-decoration: underline; }
         .venture-desc { font-size: 14px; color: var(--muted); margin: 0; }
+        .venture-tag {
+            font-size: 12px; color: var(--muted); opacity: 0.7;
+            font-style: italic; margin: 0;
+        }
+        .leadership { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--line); }
+        .leadership h2 {
+            font-size: 13px; font-weight: 600;
+            letter-spacing: 0.12em; text-transform: uppercase;
+            color: var(--muted); margin-bottom: 20px;
+        }
+        .leader { padding: 14px 0; border-bottom: 1px solid var(--line); }
+        .leader:last-child { border-bottom: none; }
+        .leader-name { font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
+        .leader-title { font-size: 13px; color: var(--muted); margin: 0 0 6px; }
+        .leader-bio { font-size: 14px; color: var(--muted); margin: 0; }
         .contact { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--line); }
         .contact h2 {
             font-size: 13px; font-weight: 600;
@@ -98,22 +120,46 @@
                     related services. Each venture operates under its own brand
                     and is accessible through its own website.
                 </p>
-                <p>
-                    For matters relating to the entity itself, please use the
-                    contact information below.
-                </p>
                 <div class="ventures">
                     <h2>Ventures</h2>
-                    <div class="venture-item">
-                        <div class="venture-name"><a href="/voicemode">VoiceMode</a></div>
-                        <p class="venture-desc">On-device voice dictation for Mac. Press a key, speak, and your words appear in any app — 100% private, no subscription.</p>
+                    <p style="margin-bottom:24px">Our current portfolio spans app development and professional consulting services.</p>
+                    <div class="venture-category">
+                        <div class="venture-category-label">App Development</div>
+                        <div class="venture-item">
+                            <div class="venture-name"><a href="/voicemode">VoiceMode</a></div>
+                            <p class="venture-desc">On-device voice dictation for Mac. Press a key, speak, and your words appear in any app — 100% private, no subscription.</p>
+                        </div>
+                    </div>
+                    <div class="venture-category">
+                        <div class="venture-category-label">Consulting</div>
+                        <div class="venture-item">
+                            <div class="venture-name">Healthy Home Consulting</div>
+                            <p class="venture-desc">Mold assessment and indoor air quality consulting for healthier living environments.</p>
+                            <p class="venture-tag">Coming soon</p>
+                        </div>
+                        <div class="venture-item">
+                            <div class="venture-name">AI Consulting</div>
+                            <p class="venture-desc">AI strategy and implementation for enterprise teams.</p>
+                            <p class="venture-tag">Coming soon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="leadership">
+                    <h2>Leadership</h2>
+                    <div class="leader">
+                        <div class="leader-name">Brianna Grossman</div>
+                        <p class="leader-title">OWNER / CEO</p>
+                        <p class="leader-bio">Indoor environmental consultant specializing in mold assessment and healthy home practices.</p>
+                    </div>
+                    <div class="leader">
+                        <div class="leader-name">T.J. Grossman</div>
+                        <p class="leader-title">OWNER / CTO</p>
+                        <p class="leader-bio">Solutions engineer with 10+ years at Oracle and Salesforce, working with Fortune 500 companies on enterprise software, cloud architecture, and AI implementation.</p>
                     </div>
                 </div>
                 <div class="contact">
                     <h2>Contact</h2>
-                    <p>
-                        <a href="mailto:tj@sanctuarypartners.llc">tj@sanctuarypartners.llc</a>
-                    </p>
+                    <p>For matters relating to the entity itself, please reach out to us at <a href="mailto:admin@sanctuarypartners.llc">admin@sanctuarypartners.llc</a>.</p>
                 </div>
             </main>
         </div>
