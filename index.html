@@ -40,6 +40,23 @@
         main { flex: 1; }
         .lede { font-size: 18px; color: var(--ink); margin-bottom: 24px; }
         p { color: var(--muted); margin-bottom: 16px; }
+        .ventures { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--line); }
+        .ventures h2 {
+            font-size: 13px; font-weight: 600;
+            letter-spacing: 0.12em; text-transform: uppercase;
+            color: var(--muted); margin-bottom: 20px;
+        }
+        .venture-item {
+            display: flex; flex-direction: column; gap: 4px;
+            padding: 16px 0; border-bottom: 1px solid var(--line);
+        }
+        .venture-item:last-child { border-bottom: none; }
+        .venture-name {
+            font-size: 16px; font-weight: 600; color: var(--ink);
+        }
+        .venture-name a { color: var(--ink); border-bottom: none; }
+        .venture-name a:hover { color: var(--accent); }
+        .venture-desc { font-size: 14px; color: var(--muted); margin: 0; }
         .contact { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--line); }
         .contact h2 {
             font-size: 13px; font-weight: 600;
@@ -85,6 +102,13 @@
                     For matters relating to the entity itself, please use the
                     contact information below.
                 </p>
+                <div class="ventures">
+                    <h2>Ventures</h2>
+                    <div class="venture-item">
+                        <div class="venture-name"><a href="/voicemode">VoiceMode</a></div>
+                        <p class="venture-desc">On-device voice dictation for Mac. Press a key, speak, and your words appear in any app — 100% private, no subscription.</p>
+                    </div>
+                </div>
                 <div class="contact">
                     <h2>Contact</h2>
                     <p>
